@@ -1,0 +1,101 @@
+Category,Brand,Material,Region,BaseCost,Weight,Rating,Price
+Jacket,BrandB,Silk,Europe,913,0.69,1.1,1093.0
+Saree,BrandC,Polyester,Asia,1057,1.44,3.5,1416.0
+T-shirt,BrandB,Cotton,Asia,730,1.15,2.3,905.0
+Jacket,BrandA,Polyester,North America,238,0.98,3.0,420.0
+Jacket,BrandB,Polyester,Asia,325,0.4,4.6,628.0
+Saree,BrandB,Silk,North America,650,0.4,2.0,771.0
+T-shirt,BrandB,Silk,Europe,372,0.28,2.6,544.0
+Saree,BrandB,Polyester,Asia,852,1.33,4.0,1281.0
+T-shirt,BrandA,Cotton,North America,953,0.98,1.9,1092.0
+Kurta,BrandD,Denim,North America,419,1.12,1.3,648.0
+Jeans,BrandB,Polyester,Europe,837,0.23,2.2,1063.0
+Jeans,BrandB,Cotton,Asia,257,1.46,1.6,392.0
+Jeans,BrandC,Silk,Asia,859,1.28,4.7,1177.0
+Saree,BrandB,Silk,North America,675,0.48,4.2,862.0
+Kurta,BrandC,Cotton,Asia,655,0.44,3.5,882.0
+T-shirt,BrandD,Denim,North America,1028,0.44,4.5,1201.0
+Jacket,BrandA,Silk,Asia,1094,0.6,4.2,1382.0
+T-shirt,BrandA,Silk,North America,560,0.88,1.7,665.0
+Jacket,BrandD,Silk,Asia,1134,0.76,4.6,1457.0
+T-shirt,BrandA,Cotton,Europe,200,0.58,3.2,382.0
+Kurta,BrandD,Polyester,Asia,586,1.0,4.2,941.0
+Jacket,BrandD,Silk,Asia,1172,0.38,4.6,1516.0
+Saree,BrandD,Polyester,Europe,547,0.58,2.3,630.0
+T-shirt,BrandA,Denim,Asia,389,0.68,1.4,511.0
+T-shirt,BrandC,Silk,Europe,704,0.79,1.9,803.0
+Jacket,BrandD,Silk,Asia,390,1.22,2.7,609.0
+Saree,BrandB,Denim,North America,707,0.46,4.3,953.0
+Saree,BrandA,Silk,North America,568,0.87,4.4,833.0
+Kurta,BrandD,Polyester,Asia,608,0.97,1.0,681.0
+Saree,BrandD,Cotton,Asia,1023,0.26,3.0,1275.0
+Saree,BrandB,Polyester,Asia,1128,0.99,2.7,1422.0
+Saree,BrandC,Cotton,North America,1133,0.42,1.9,1267.0
+Jeans,BrandC,Cotton,Asia,316,0.28,1.5,423.0
+Kurta,BrandC,Polyester,North America,333,1.43,2.4,594.0
+T-shirt,BrandD,Polyester,Europe,257,1.46,4.8,671.0
+Jacket,BrandD,Polyester,North America,755,1.25,2.3,1043.0
+T-shirt,BrandD,Polyester,North America,884,0.6,3.1,1053.0
+Kurta,BrandA,Denim,Europe,871,0.33,3.8,999.0
+Jacket,BrandB,Silk,North America,372,1.09,2.5,702.0
+Kurta,BrandD,Cotton,Asia,1028,0.77,4.9,1344.0
+Saree,BrandB,Polyester,Asia,1014,0.36,4.8,1322.0
+Jacket,BrandB,Polyester,North America,348,0.84,2.0,533.0
+Saree,BrandC,Polyester,Asia,279,0.24,3.0,355.0
+T-shirt,BrandA,Denim,North America,1085,1.38,2.2,1413.0
+T-shirt,BrandD,Polyester,Asia,412,0.54,2.1,493.0
+Jacket,BrandC,Polyester,Asia,402,1.06,1.1,515.0
+Jacket,BrandC,Polyester,North America,963,0.61,3.4,1258.0
+Kurta,BrandD,Silk,Asia,428,0.88,3.0,648.0
+Kurta,BrandB,Denim,North America,875,0.91,1.2,1070.0
+Saree,BrandC,Polyester,Asia,426,0.44,2.1,559.0
+Jacket,BrandB,Cotton,Asia,858,1.46,4.6,1211.0
+T-shirt,BrandA,Cotton,Europe,731,1.21,2.0,961.0
+Kurta,BrandB,Cotton,Europe,640,1.42,1.6,762.0
+Kurta,BrandA,Denim,North America,601,1.36,3.0,837.0
+T-shirt,BrandB,Denim,Europe,246,0.98,4.9,661.0
+Kurta,BrandC,Cotton,North America,432,1.4,2.0,575.0
+Saree,BrandC,Polyester,Europe,504,0.32,3.7,810.0
+Jacket,BrandA,Denim,Asia,725,0.45,4.0,1062.0
+T-shirt,BrandD,Cotton,North America,342,0.26,2.0,480.0
+Jacket,BrandA,Cotton,North America,614,0.62,3.9,802.0
+Kurta,BrandA,Polyester,Asia,712,0.71,2.5,841.0
+Kurta,BrandB,Silk,North America,572,0.55,3.5,793.0
+T-shirt,BrandB,Denim,North America,765,1.28,3.5,1062.0
+Saree,BrandA,Polyester,Europe,1085,0.66,3.1,1277.0
+Jeans,BrandC,Cotton,North America,458,0.57,1.4,523.0
+T-shirt,BrandB,Cotton,Asia,855,0.91,4.3,1214.0
+Jeans,BrandD,Polyester,Europe,670,0.38,2.3,884.0
+Jeans,BrandB,Denim,Europe,1152,1.24,1.7,1442.0
+Saree,BrandB,Silk,Asia,1170,0.3,1.2,1277.0
+Jeans,BrandD,Silk,Asia,211,1.48,3.4,431.0
+Jeans,BrandA,Cotton,Europe,529,1.2,3.7,856.0
+Saree,BrandD,Denim,North America,935,0.46,1.1,985.0
+Jeans,BrandA,Silk,Europe,983,0.21,3.0,1065.0
+Jeans,BrandA,Denim,Asia,1167,1.26,1.9,1480.0
+Jeans,BrandA,Denim,Europe,557,1.12,3.6,802.0
+T-shirt,BrandD,Cotton,Asia,1171,1.15,1.7,1403.0
+T-shirt,BrandA,Silk,Europe,607,1.2,3.8,873.0
+T-shirt,BrandC,Polyester,North America,867,0.3,2.5,1066.0
+Saree,BrandD,Cotton,Europe,572,0.67,4.7,885.0
+Kurta,BrandC,Silk,Europe,207,0.35,1.6,268.0
+Jeans,BrandA,Silk,Asia,321,1.32,2.4,623.0
+Jeans,BrandB,Silk,Asia,547,1.01,1.5,707.0
+Saree,BrandA,Silk,Asia,875,0.63,4.7,1214.0
+Jeans,BrandC,Silk,Europe,289,0.28,4.5,507.0
+T-shirt,BrandC,Denim,North America,847,0.6,2.0,981.0
+Kurta,BrandD,Cotton,Asia,897,0.62,3.6,1217.0
+Jacket,BrandB,Denim,Asia,515,1.15,4.3,847.0
+Jeans,BrandD,Polyester,Europe,377,1.03,3.2,705.0
+T-shirt,BrandC,Silk,Asia,739,1.35,3.1,1120.0
+Jacket,BrandA,Cotton,North America,931,0.81,2.0,1049.0
+Kurta,BrandB,Silk,North America,1068,0.36,1.4,1123.0
+Jacket,BrandA,Cotton,Asia,240,1.13,4.6,580.0
+T-shirt,BrandA,Denim,Asia,939,1.19,4.6,1269.0
+Jacket,BrandB,Cotton,Europe,903,0.93,3.5,1100.0
+Saree,BrandD,Polyester,North America,1122,1.2,2.4,1340.0
+Jacket,BrandA,Polyester,North America,701,0.84,2.4,895.0
+Jeans,BrandC,Cotton,Asia,1158,0.88,3.9,1519.0
+Jeans,BrandA,Cotton,Europe,344,0.76,4.6,740.0
+Saree,BrandB,Cotton,North America,400,0.23,4.5,599.0
+T-shirt,BrandB,Cotton,North America,1128,0.34,4.1,1432.0
