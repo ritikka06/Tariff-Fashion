@@ -1,5 +1,3 @@
-# train_model.py
-
 import os
 import pandas as pd
 import joblib
@@ -11,7 +9,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.metrics import mean_squared_error
 
 
-df = pd.read_csv("fashion_dataset.csv")
+
+df = pd.read_csv("Update fashion_dataset.csv")
 
 X = df.drop("Price", axis=1)
 y = df["Price"]
@@ -21,11 +20,40 @@ categorical_cols = ['Category', 'Brand', 'Material', 'Region']
 numerical_cols = ['BaseCost', 'Weight', 'Rating']
 
 # ColumnTransformer for encoding
+df = pd.read_csv("Tariff_fashion_cleaned.csv")
+
+# Rename columns for convenience
+df.rename(columns={
+    "Product Type": "Category",
+    "Brand Name": "Brand",
+    "Price After Tariff": "Price",
+    "Price Before Tariff": "BaseCost"
+}, inplace=True)
+
+# Select only available features
+features = ["Category", "Brand", "BaseCost"]
+
+# Drop NA rows for these columns and target
+df.dropna(subset=features + ["Price"], inplace=True)
+
+X = df[features]
+y = df["Price"]
+
+# Define categorical and numerical columns
+categorical_cols = ["Category", "Brand"]
+numerical_cols = ["BaseCost"]
+
+# Preprocessing pipeline
+
 preprocessor = ColumnTransformer(
     transformers=[
         ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_cols)
     ],
+
     remainder='passthrough'  # keeps numerical features
+
+    remainder='passthrough'
+
 )
 
 model_pipeline = Pipeline(steps=[
@@ -45,5 +73,9 @@ print(f"Test MSE: {mse:.2f}")
 
 os.makedirs("model", exist_ok=True)
 
+
 joblib.dump(model_pipeline, "model/price_predictor.pkl")
 print("Model saved to model/price_predictor.pkl")
+
+joblib.dump(model_pipeline, "model/predictor.pkl")
+print("Model saved to model/ppredictor.pkl")
