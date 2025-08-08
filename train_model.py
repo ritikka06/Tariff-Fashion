@@ -8,6 +8,18 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.metrics import mean_squared_error
 
+
+
+df = pd.read_csv("Update fashion_dataset.csv")
+
+X = df.drop("Price", axis=1)
+y = df["Price"]
+
+# Define categorical and numerical columns
+categorical_cols = ['Category', 'Brand', 'Material', 'Region']
+numerical_cols = ['BaseCost', 'Weight', 'Rating']
+
+# ColumnTransformer for encoding
 df = pd.read_csv("Tariff_fashion_cleaned.csv")
 
 # Rename columns for convenience
@@ -32,11 +44,16 @@ categorical_cols = ["Category", "Brand"]
 numerical_cols = ["BaseCost"]
 
 # Preprocessing pipeline
+
 preprocessor = ColumnTransformer(
     transformers=[
         ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_cols)
     ],
+
+    remainder='passthrough'  # keeps numerical features
+
     remainder='passthrough'
+
 )
 
 model_pipeline = Pipeline(steps=[
@@ -55,5 +72,10 @@ mse = mean_squared_error(y_test, y_pred)
 print(f"Test MSE: {mse:.2f}")
 
 os.makedirs("model", exist_ok=True)
+
+
+joblib.dump(model_pipeline, "model/price_predictor.pkl")
+print("Model saved to model/price_predictor.pkl")
+
 joblib.dump(model_pipeline, "model/predictor.pkl")
 print("Model saved to model/ppredictor.pkl")
