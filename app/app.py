@@ -8,11 +8,15 @@ st.set_page_config(page_title="Tariff-Fashion ML", layout="centered")
 st.title("Tariff-Fashion Price Predictor")
 st.markdown("Predict fashion product price and suggest tariff bracket based on features.")
 
-model_path = os.path.join(os.path.dirname(__file__), "tennis_model.cbm")
+# Updating file path from os for no future issues
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))   # This is '.../Tariff-Fashion/app'
+PROJECT_ROOT = os.path.dirname(BASE_DIR)               # Go up one level to '.../Tariff-Fashion'
+
+model_path = os.path.join(PROJECT_ROOT, "src", "models", "model", "predictor.pkl")
 model = load_model(model_path)
 
 # User Input Form
-with st.form("prediction_form"):
+with st.form("prediction_form "):
     st.subheader("Enter Product Details")
 
     category = st.selectbox("Category", ['T-shirt', 'Jeans', 'Saree', 'Jacket', 'Kurta'])
@@ -57,7 +61,8 @@ from utils import load_model, predict_price  # Make sure these exist and work
 # Cache dataset loading
 @st.cache_data
 def load_tariff_data():
-    df = pd.read_csv("Update fashion_dataset.csv")
+    csv_path = os.path.join(PROJECT_ROOT, "src", "data", "Tariff_fashion_cleaned.csv") #os path
+    df = pd.read_csv(csv_path)
     return df
 
 df = load_tariff_data()
@@ -101,7 +106,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load the ML model
-model = load_model("model/predictor.pkl")  # Adjust path if needed
+model = load_model(model_path)  # Adjust path if needed
 
 # Input Form
 with st.form("prediction_form"):
