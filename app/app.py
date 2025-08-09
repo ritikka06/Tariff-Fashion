@@ -1,13 +1,15 @@
 import streamlit as st
 import pandas as pd
 from utils import load_model, predict_price
+import os
 
 st.set_page_config(page_title="Tariff-Fashion ML", layout="centered")
 
 st.title("Tariff-Fashion Price Predictor")
 st.markdown("Predict fashion product price and suggest tariff bracket based on features.")
 
-model = load_model("model/price_predictor.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "tennis_model.cbm")
+model = load_model(model_path)
 
 # User Input Form
 with st.form("prediction_form"):
