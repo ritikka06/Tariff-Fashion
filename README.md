@@ -18,10 +18,26 @@ This Streamlit app predicts the price of a fashion product based on its features
 
 ## 📁 Folder Structure
 
-ml_tariff_module/
-├── app.py
-├── model/
-│ └── price_predictor.pkl
-├── utils.py
+Tariff-Fashion/
+│
+├── src/
+│   ├── data/              
+│   │   ├── fashion_dataset.csv
+│   │   ├── Tariff_fashion_cleaned.csv
+│   │
+│   ├── eda/               
+│   │   └── tariff_fashion.ipynb
+│   │
+│   ├── models/            
+│   │   ├── train_model.py
+│   │   └── model/         
+│   │       └── predictor.pkl   
+│
+├── app/                   
+│   ├── app.py
+│   └── utils.py
+│
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
+
