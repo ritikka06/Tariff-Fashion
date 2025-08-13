@@ -1,39 +1,41 @@
-# 🧠 Tariff-Fashion ML Module
+🧠 Tariff-Fashion ML Module
+A Streamlit-based ML app to predict fashion product prices & suggest optimal tariff brackets.
+Built as part of 🌟 GirlScript Summer of Code 2025 (GSSoC'25).
+📌 Overview
+.Tariff-Fashion is a machine learning-powered web app that:
+.Predicts the price of a fashion product based on its features.
+.Suggests the tariff bracket to classify the product for optimal pricing.
 
-This Streamlit app predicts the price of a fashion product based on its features and suggests an optimal tariff bracket. Built as part of **GSSoC 2025**.
+Provides an easy-to-use Streamlit interface for predictions.
+📊 Features
+✅ ML-based price prediction using scikit-learn
+✅ Automatic tariff bracket classification
+✅ Clean Streamlit UI for quick usage
+✅ Deployable on Streamlit Cloud in seconds
 
-## 📊 Features
+🛠 Tech Stack
+.Language: Python 3.9+
+.Framework: Streamlit
+.ML Library: scikit-learn
+.Model Storage: joblib
 
-- Price prediction using trained ML model
-- Tariff bracket suggestion (based on predicted price)
-- Clean Streamlit UI
-- Easy deployment on Streamlit Cloud
-
-## 🛠 Tech Stack
-
-- Python
-- scikit-learn
-- Streamlit
-- joblib
-
-## 📁 Folder Structure
-
+📂 Folder Structure
 Tariff-Fashion/
 │
 ├── src/
-│   ├── data/              
+│   ├── data/
 │   │   ├── fashion_dataset.csv
 │   │   ├── Tariff_fashion_cleaned.csv
 │   │
-│   ├── eda/               
+│   ├── eda/
 │   │   └── tariff_fashion.ipynb
 │   │
-│   ├── models/            
+│   ├── models/
 │   │   ├── train_model.py
-│   │   └── model/         
-│   │       └── predictor.pkl   
+│   │   └── model/
+│   │       └── predictor.pkl
 │
-├── app/                   
+├── app/
 │   ├── app.py
 │   └── utils.py
 │
@@ -41,3 +43,23 @@ Tariff-Fashion/
 ├── README.md
 └── .gitignore
 
+
+
+🤝 Contributing
+1.We ❤️ contributions!
+
+2.Fork the repo
+
+3.Create a new branch (feature/new-feature)
+
+4.Commit your changes
+git status
+
+5.Push to your fork
+
+6.Open a Pull Request
+
+Check out our CONTRIBUTING.md for more details.
+
+📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
